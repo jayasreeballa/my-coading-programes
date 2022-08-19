@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a[10],f,n,i,sum=0,j,x;
+    printf("enter size:");
+    scanf("%d",&n);
+    printf("enter the array elements:\n");
+    for(i=0;i<n;i++)
+    {
+        printf("element - %d:",i);
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        f=1;
+        for(j=1;j<=a[i];j++)
+        {
+            f=f*j;
+        }
+        sum=sum+f;
+    }
+    printf("FACTORIAL =%d",sum);
+    return 0;
+}
