@@ -1,0 +1,46 @@
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+
+int main() 
+{
+    
+char s[20];
+    
+int i,j,k,l,x;
+    
+printf("enter a string:");
+    
+scanf("%s",s);
+    
+for(i=0;s[i]!='\0';i++);
+    
+l=i;
+    
+for(i=1;i<=l;i++)
+    
+{
+        
+ for(j=0;j<=l-i;j++)
+        
+ {
+            
+  x=i+j;
+             
+  for(k=j;k<x;k++)
+           
+  printf("%c",s[k]);
+            
+  printf("\n");
+        
+ }
+        
+    
+}
+
+    
+return 0;
+
+}
+

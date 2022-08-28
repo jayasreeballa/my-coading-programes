@@ -1,0 +1,91 @@
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+#include<string.h>
+
+
+int main() 
+{
+    
+char s1[20],s2[20];
+    
+int count=0,l1,l2,i,j,temp;
+  
+ printf("enter two strings:");
+    
+scanf("%s\n %s",s1,s2);
+    
+l1=strlen(s1);
+    
+l2=strlen(s2);
+    
+for(i=0;i<l1;i++)
+    
+{
+        
+ for(j=0;j<l1-i-1;j++)
+        
+ {
+            
+  if(s1[j]>s1[j+1])
+           
+  {
+                
+   temp=s1[j];
+               
+   s1[j]=s1[j+1];
+                
+  s1[j+1]=temp;
+            
+ }
+        
+}
+    
+}
+    
+for(i=0;i<l2;i++)
+    
+{
+        
+ for(j=0;j<l2-i-1;j++)
+        
+ {
+            
+  if(s2[j]>s2[j+1])
+            
+ {
+                
+  temp=s2[j];
+                
+  s2[j]=s2[j+1];
+                
+  s2[j+1]=temp;
+           
+ }
+        
+}
+    
+}
+    
+for(i=0;i<l2;i++)
+    
+{
+     
+  if(s1[i]==s2[i])
+     
+  count++;
+    
+}
+    
+if(count==l1)
+    
+printf("anagram");
+    
+else
+    
+printf("not  anagram");
+    
+return 0;
+
+}
