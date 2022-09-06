@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a[100],i,n;
+    printf("enter n value:");
+    scanf("%d",&n);
+    printf("enter elements");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int len=n-1;
+    display(a,0,len);
+}int display(int a[],int start,int end)
+{
+    if(start>end)
+    return;
+    else
+    printf("%d\t",a[start]);
+    display(a,start+1,end);
+}
