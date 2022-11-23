@@ -1,0 +1,16 @@
+//devision of two numbers//
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+
+# Divide numbers
+division = num1/num2
+
+# print value
+print("The division of {0} and {1} is {2}".format(num1,num2,division))
+
+out put:
+
+
+Enter first number: 24
+Enter second number: 8
+The division of 24.0 and 8.0 is 3.0

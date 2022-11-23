@@ -1,0 +1,15 @@
+//multiplication of two numbers//
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+
+# calculate product
+product = num1*num2
+
+# print multiplication value
+print("The Product of Number: %0.2f" %product)
+
+output:
+
+Enter first number: 15
+Enter second number: 8
+The Product of Number: 120.00

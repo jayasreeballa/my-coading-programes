@@ -1,0 +1,16 @@
+//subtraction of two numbers//
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+
+# subtract two numbers
+sub = num1 - num2
+
+# print the subtraction result
+# value will print in float
+print('The subtraction of numbers = %0.2f' %sub)
+
+output:
+
+Enter first number: 20
+Enter second number: 16
+The subtraction of numbers = 4.00
